@@ -13,4 +13,10 @@ UCLASS()
 class MOVEMENTFPS_API ABasePlayerController : public APlayerController
 {
 	GENERATED_BODY()
+	
+public:
+	ABasePlayerController();
+
+	UFUNCTION(BlueprintCallable, Category = "Player Information")
+	APawn* GetPossessedPawn() const;
 };

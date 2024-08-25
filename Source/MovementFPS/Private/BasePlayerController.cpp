@@ -2,3 +2,13 @@
 
 
 #include "BasePlayerController.h"
+
+ABasePlayerController::ABasePlayerController()
+{
+	bReplicates = true;
+}
+
+APawn* ABasePlayerController::GetPossessedPawn() const
+{
+	return GetPawn();
+}
